@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Memory Components</title>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+        body{
+            margin: 0;
+            font-family: Quicksand, 'sans-serif';
+            overflow-x: hidden;
+            
+        }
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 200px;
+            align-content: center;
+            align-items: center;
+            padding-bottom: 250px;
+        }
+
+        .title-gradient {
+            background-image:linear-gradient( to bottom right, rgb(255, 153, 0), rgb(235,40,56) );
+            align-items: center;
+            color: white;
+        }
+        #page-header {
+            padding: 25px;
+            padding-bottom: 50px;
+        }
+        #title {
+            font-size: 450%;
+        }
+        .small-title {
+            font-size: 225%;
+        }
+        
+
+        .wave-1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-1 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-1 .shape-fill {
+            fill: #202731;
+        }
+
+        .wave-2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-2 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-2 .shape-fill {
+            fill: #FFFFFF;
+        }
+        .sep-line {
+            background-color: #cca737;
+            width: 100px;
+            height: 2px;
+            border: none;
+
+        }
+        .section-1 {
+            background-color: #202731;
+            color: white;
+
+        }
+        .section-2 {
+            background-color: white ;
+            color: #202731;
+        }
+        p {
+            padding-left: 15%;
+            padding-right: 15%
+        }
+        ol {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        li {
+            padding-bottom: 20px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .image-container {
+            float: center;
+            padding: 5px;
+            padding-top: 50px;
+        }
+        h3 {
+            align-self: center;
+            align-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="title-gradient"  id="page-header">
+        <h1 id="title">Memory Components</h1>
+        <h1> By Shreyas, Aahana, and Kadambari</h1>
+        <div class="wave-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="section-1">
+        <h1>RAM (Random Access Memory) </h1>
+        <hr class="sep-line">
+        <p>The RAM, also called read-write memory or direct access memory, is a volatile memory that can be read from or written to multiple times. The data will be lost when
+            the computer system is switched off.
+            Any byte of data stored can be accessed directly without affecting the other bytes. 
+            RAM stores information currently in use allowing the computer to quickly access this information when required. 
+            RAM can be divided into two types: Dynamic RAM(DRAM), and Static RAM(SRAM). DRAM is built out of memory cells, each with an electricity-leaking capacitor and a transistor, and requires charging regularly(every few milliseconds) so that the data is preserved. While DRAM requires periodic refreshing to store data, it is cheaper compared to SRAM and also has a higher data storage density, and is most frequently used in main memory. SRAM is able to store memory through flip-flops that can store data as long as the computer is switched on. They do not require refreshing, but do have faster access speeds compared to DRAM, and are used in cache memory.
+        </p>
+        <div class="clearfix" align="center">
+          <div class="img-container">
+          <img src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/what-is-dram1618865025445396.jpg"  style="width:60%">
+          <h3>A photo of DRAM</h3>
+          </div>
+          <div class="img-container">
+          <img src="http://2.bp.blogspot.com/-zcWI-2AOftw/VEdl7MdMqMI/AAAAAAAAE8Q/Wi_qsJv8Vww/s1600/SRAM.jpg" style="width:60%" height="60%">
+          </div>
+          <h3>A photo of SRAM</h3>
+          <iframe width="600" height="315"
+        src="https://www.youtube.com/embed/by1HmASLHkM?t=1">
+            </iframe>
+        </div>
+        
+        <div class="wave-2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="section-2">
+        <h1>ROM (Read Only Memory)</h1>
+        <hr class="sep-line">
+        <p>ROM, as the name implies, can only be read and not written to or edited. It shares the properties of random access with RAM, but unlike RAM, is non-volatile. ROM is primarily used for the storage of data or programs that are meant to be reused without change, such as bootstrap programs built to boot up a system when it is turned on. ROM has many other uses, such as in embedded systems, and can be divided into four types.
+            <ol>
+                <li>The simplest type of ROM where all required data is installed into a chip as part of the manufacturing process. The chip must be replaced in order to accomodate any changes needed by the system.</li>
+                <li>Programmable ROM(PROM) is a form of storage where each bit is locked by a fuse or antifuse. When developing PROMs, data is first sent to a system builder to test the programmable chip before it is committed to all of the provided chips. PROM cannot be written once installed.</li>
+                <li>Erasable PROM(EPROM) is more flexible than PROM in that data can be erased from the chip by using a UV light, and new data can be written back into it, though it usually requires removing the chip from the device. </li>
+                <li>
+                    Electrically Erasable PROM is the most flexible ROM type, where an electrical signal is used to remove existing data instead of UV light, and its contents can be changed without removing the chip from the device. However, EEPROM is still used like a regular ROM most of the time, as a read-only chip.
+                </li>
+            </ol></p>
+        <div class="clearfix" align="center">
+            <iframe width="600" height="315"
+        src ="https://www.youtube.com/embed/66KqmPRy1uI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com">
+            </iframe>
+        </div>
+        <div class="wave-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="section-1">
+        <h1>Buffers</h1>
+        <hr class="sep-line">
+        <p class="left-p"> A buffer is a temporary storage that is created for data being transmitted from one location in a system to another that functions as a queue. The queue holds data that is sent more quickly than it can be received. Buffers help ensure that data is transferred in the exact order that it entered the buffer.</p>
+        <div class="clearfix" align="center">
+            <div class="img-container">
+              <img src="buffer.jpg"  style="width:60%">
+              <h3>How a buffer works</h3>
+              </div>
+        </div>
+    </section>
+    
+</body>
+</html>
